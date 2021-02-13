@@ -1,7 +1,7 @@
 styles = """
 /*
- * "my love gift"💕 v0.0.1
- * Authored by idealclover
+ * "A Valentine's gift"💕 v0.0.1
+ * Authored by zyb
  */
 
 body {
@@ -11,14 +11,23 @@ body {
 }
 
 /*
+ *...
+ * 有...
  * ...
- * ...hello?
- * 大家好！我是翠翠！idealclover~
- * 情人节快到了，该给女朋友点什么呢~
- * 写一个网页给子枨吧ww送她一颗小心心~
- * 可是~要怎么做呢~
- * 首先做一个框框来放我们的代码吧ww
- * 那么~开动啦！！
+ * ...有人吗？
+ * ...
+ * 呀！看到你咯！
+ * 臭居居！mua~
+ * 我是大狗狗~
+ * 咳咳
+ * 情人节到咯，送个什么礼物好呢？
+ * emmmmm
+ * 有了！给你送颗小心心吧
+ * （才不是因为我不会比心来着
+ * 来咯来咯~
+ * 第一步！
+ * 找个地方写代码
+ * 开动！！
  */
 
 pre {
@@ -35,8 +44,9 @@ pre {
 }
 
 /*
- * 不行不行，全是白色看代码都要看昏了
- * 我需要语法高亮~那我们就动手实现一下它吧~
+ * 看得费劲吗？费劲就对了！
+ * 全是白色要看花眼了
+ * 需要语法高亮！
  * Colors based on Base16 Ocean Dark
  */
 
@@ -50,9 +60,9 @@ pre em:not(.comment) { font-style: normal; }
 
 
 /*
- * 呦吼你看~代码高亮实现啦~接下来我们开工吧！
- * 首先我们把这个代码框移一下吧~它太占地方啦
- * 由于是响应式布局~所以在手机上和电脑上有不同的显示效果呦
+ * 这就看起来顺眼多了嘛
+ * emmmm
+ * 不过这个框框放这儿也太碍眼了，给它整到边上去
  */
 
 @media screen and (max-width: 768px) {
@@ -64,7 +74,8 @@ pre em:not(.comment) { font-style: normal; }
 }
 
 /*
- * 用代码做一颗小心心！
+ * 一切准备就绪！
+ * 开始咯~
  */
 
 @media screen and (max-width: 768px) {
@@ -118,7 +129,7 @@ pre em:not(.comment) { font-style: normal; }
           transform-origin: 100% 100%;
 }
 
-/* 给它加上一点阴影ww */
+/* 稍微加点阴影 */
 
 #heart::after {
   box-shadow:
@@ -131,13 +142,12 @@ pre em:not(.comment) { font-style: normal; }
 }
 
 /*
- * 这可是~我的小心心~
- * 我要给它签上我的名字！
- * >v<
+ * 我送的小心心
+ * 当然要签上我的名字啦
  */
 
 #heart i::before {
-  content: 'idealclover';
+  content: 'zyb';
   position: absolute;
   z-index: 9;
   width: 100%;
@@ -150,8 +160,8 @@ pre em:not(.comment) { font-style: normal; }
 }
 
 /*
- * 接下来做什么呢~
- * 我们让这颗心跳起来吧！
+ * 这就完成的话未免有些太简单了
+ * emmm...让它跳起来吧！
  */
 
 @-webkit-keyframes heartbeat {
@@ -195,7 +205,7 @@ pre em:not(.comment) { font-style: normal; }
 }
 
 /*
- * 好哒！接下来准备让它跳起来吧ww
+ * 准备就绪！接下来要让它开始跳咯
  */
 
 #heart, #echo {
@@ -223,19 +233,27 @@ pre em:not(.comment) { font-style: normal; }
 }
 
 /*
- * 准备好了嘛~！
+ * 各部门准备就绪！
  */
 
 #heart, #echo {
 
 /*
+ * ...10...
+ *
+ * 从10开始倒数未免有些太长了
+ *
+ * 知道你等不及啦~
+ *
  * ...3...
  *
  * ...2...
  *
- * ...1...
+ * ...1.7...
  *
- * 再等一下~略略略~
+ * ...1.6...
+ *
+ * 嘻嘻 好啦好啦这就来咯！
  *
  */
 
@@ -243,26 +261,27 @@ pre em:not(.comment) { font-style: normal; }
           animation-play-state: running;
 
 /*
- * ...来啦!
+ * 给👴跳！
  */
 
 }
 
 /*
- * 诶嘿~~
- * 这样我们的小心心就做好啦~
- * 怎么样~ >v< 还好看吗~~
- * 亲爱哒！情人节快乐！
- * 爱你哦！
- *
+ * 噗噗噗（脑部心跳的声音
+ * 哝~
+ * 送给你的情人节礼物
+ * 情人节快乐！
+ * 爱你哟
+ * muuuuuuuuua!
  */
 
 /*
  * "my love gift" v0.0.1
  * Robot rights protected under BOT License & Apache2 license
  * Inspired by pen#PwLXXP
- * 谨以此网页献给我的女朋友子枨💕
- * 你最可爱ww
+ * Forked from Idealclover
+ * 谨以此网页献给我的女朋友王焓💕
+ * 代码比心~
  */
 """
 finalStyle = styles
@@ -319,9 +338,8 @@ $('body').append """
 	<pre id="style-text"></pre>
   <div style = 'position: fixed;left: 30px;bottom: 10px;'>
     <a id='skipAnimation'>跳过动画</a>
-    <a style='color: #fff' href='http://love.idealclover.top'>重新播放</a>
-    <a style='color: #fff' target="_blank" href='https://github.com/idealclover/Love-Gift'>项目地址</a>
-    <a style='color: #fff' target="_blank" href='https://www.idealclover.top/'>我的博客</a>
+    <a style='color: #fff' href='https://bobo-z.github.io/Valentine-Gift/'>重新播放</a>
+    <a style='color: #fff' target="_blank" href='https://github.com/bobo-z/Love-Gift'>项目地址</a>
   </div>
 """
 
